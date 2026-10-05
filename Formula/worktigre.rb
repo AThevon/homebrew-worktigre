@@ -4,8 +4,8 @@
 class Worktigre < Formula
   desc "Git worktree manager with fzf integration and GitHub/GitLab support"
   homepage "https://github.com/AThevon/worktigre"
-  url "https://github.com/AThevon/worktigre/archive/refs/tags/v2.2.0.tar.gz"
-  sha256 "57c27030be32ca8df4b2799a6fada4280bdbec076b7de5d152e94e51c419f683"
+  url "https://github.com/AThevon/worktigre/archive/refs/tags/v2.3.0.tar.gz"
+  sha256 "76c7f4aac74ac9a614475388f509a94fe2eb9bba260c8f35bd8248418ffa39ac"
   license "GPL-3.0-or-later"
 
   # Allow existing users who installed `wt` to migrate on `brew upgrade`
@@ -35,6 +35,6 @@ class Worktigre < Formula
   end
 
   test do
-    assert_match "wt 2.2.0", shell_output("#{bin}/wt-core --version 2>&1")
+    assert_match "wt 2.3.0", shell_output("#{bin}/wt-core --version 2>&1")
   end
 end
